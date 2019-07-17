@@ -11,7 +11,7 @@
 ## 🎊 Status
 
 [![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
-[![npm version](https://img.shields.io/npm/v/@bluebase/plugin-apollo-cache-persist.svg?style=flat)](https://npmjs.org/package/@bluebase/plugin-apollo-cache-persist "View this project on npm")
+[![npm version](https://img.shields.io/npm/v/@bluebase/plugin-apollo-cache-persist.svg?style=flat)](https://npmjs.org/package/@bluebase/plugin-apollo-cache-persist 'View this project on npm')
 [![Build Status](https://travis-ci.com/BlueBaseJS/plugin-apollo-cache-persist.svg?branch=master)](https://travis-ci.com/BlueBaseJS/plugin-apollo-cache-persist)
 [![codecov](https://codecov.io/gh/BlueBaseJS/plugin-apollo-cache-persist/branch/master/graph/badge.svg)](https://codecov.io/gh/BlueBaseJS/plugin-apollo-cache-persist)
 [![Greenkeeper badge](https://badges.greenkeeper.io/BlueBaseJS/plugin-apollo-cache-persist.svg)](https://greenkeeper.io/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BlueBaseJS/plugin-apollo-cache-persist/blob/master/CONTRIBUTING.md)
@@ -22,10 +22,10 @@
 ## 🤝 Compatibility
 
 | 🌏 Web | 🖥 Electron | 📱 React Native |
-| :----: | :---------: | :-------------: |
-|    ✅   |      ✅      |        ❌        |
+| :----: | :--------: | :-------------: |
+|   ✅   |     ✅     |       ✅        |
 
 ## Docs
 
--   [Storybook](https://BlueBaseJS.github.io/plugin-apollo-cache-persist/storybook/)
--   [API Docs](https://BlueBaseJS.github.io/plugin-apollo-cache-persist/)
+- [Storybook](https://BlueBaseJS.github.io/plugin-apollo-cache-persist/storybook/)
+- [API Docs](https://BlueBaseJS.github.io/plugin-apollo-cache-persist/)
