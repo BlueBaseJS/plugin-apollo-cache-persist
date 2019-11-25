@@ -79,7 +79,7 @@
   "dependencies": {
     "apollo-cache-persist": "^0.1.1",
     "deepmerge": "^4.0.0",
-    "react-native": "^0.59.8",
+    "react-native": "^0.61.5",
     "tslib": "^1.9.3"
   },
   "devDependencies": {
