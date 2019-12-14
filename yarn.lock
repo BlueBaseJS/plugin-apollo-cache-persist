@@ -911,12 +911,12 @@
     tslint-react "^3.6.0"
     typescript "^3.1.4"
 
-"@bluebase/core@^4.0.0-alpha.37":
-  version "4.0.0-alpha.37"
-  resolved "https://registry.yarnpkg.com/@bluebase/core/-/core-4.0.0-alpha.37.tgz#fda8c0ad94c6e14c02457220d828218b12bde5c9"
-  integrity sha512-Coo8Z4eO61ySeplR19E4y9P/KO2ymkR+uCaNZ+w2kxxc2EBgg7uY6NqPdHzXxfxzqLwO2w0Z5n/2Dm61Pp9gpw==
+"@bluebase/core@^5.4.1":
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/@bluebase/core/-/core-5.4.1.tgz#8ae9c2250dd1f4789b391ab43ffb08410eaf9fb0"
+  integrity sha512-YCjYKPRBn+7bjKBdIKt0csb/JWL6O0QstfnUPtO9A7YsCoWmuWRF+9sPql4iVQGrKZcwWOm+3KB5Ym8YBYhsyA==
   dependencies:
-    deepmerge "^3.2.0"
+    deepmerge "^4.0.0"
     hoist-non-react-statics "^3.3.0"
     is-plain-object "^3.0.0"
     lodash.flowright "^3.5.0"
@@ -927,7 +927,7 @@
     lodash.kebabcase "^4.1.1"
     react-loadable "^5.5.0"
     rtl-detect "^1.0.2"
-    tslib "^1.9.3"
+    tslib "^1.10.0"
 
 "@bluebase/plugin-apollo@^1.1.1":
   version "1.1.1"
@@ -11397,7 +11397,7 @@ tslib@1.9.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.0.tgz#e37a86fda8cbbaf23a057f473c9f4dc64e5fc2e8"
   integrity sha512-f/qGG2tUkrISBlQZEjEqoZ3B2+npJjIf04H1wuAv9iA8i04Icp+61KRXxFdha22670NJopsZCIjhC3SnjPRKrQ==
 
-tslib@^1.7.1, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
+tslib@^1.10.0, tslib@^1.7.1, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
   integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
