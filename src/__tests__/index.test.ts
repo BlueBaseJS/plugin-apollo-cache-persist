@@ -8,16 +8,17 @@ import 'cross-fetch/polyfill';
 
 import { BlueBase } from '@bluebase/core';
 import BlueBasePluginApollo from '@bluebase/plugin-apollo';
+import { CachePersistor } from 'apollo-cache-persist';
 import Plugin from '../index';
-import { persistCache } from 'apollo-cache-persist';
+
+jest.mock('apollo-cache-persist', () => ({ CachePersistor: jest.fn() }));
 
 test('Plugin should be correctly registered', async () => {
 	const BB = new BlueBase();
-	await BB.Plugins.register(BlueBasePluginApollo);
-	await BB.Plugins.register(Plugin);
 
-	await BB.boot();
-
+	await BB.boot({ plugins: [BlueBasePluginApollo, Plugin] });
 	expect(BB.Plugins.has('@bluebase/plugin-apollo-cache-persist')).toBeTruthy();
-	expect(persistCache).toBeCalledTimes(1);
+	await BB.reset();
+
+	expect(CachePersistor).toBeCalledTimes(1);
 });

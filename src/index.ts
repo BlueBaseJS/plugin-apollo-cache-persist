@@ -1,7 +1,7 @@
 import { BlueBase, createPlugin } from '@bluebase/core';
 
 import { AsyncStorage } from 'react-native';
-import { persistCache } from 'apollo-cache-persist';
+import { CachePersistor } from 'apollo-cache-persist';
 
 export default createPlugin({
 	description: 'Simple persistence for all Apollo Client 2.0 cache implementations.',
@@ -16,14 +16,21 @@ export default createPlugin({
 	filters: {
 		'plugin.apollo.cache': async (cache: any, _ctx: any, BB: BlueBase) => {
 			const configs = BB.Configs.getValue('plugin.apollo-cache-persist.configs');
-
-			await persistCache({
+			const persistor = new CachePersistor({
 				cache,
 				storage: AsyncStorage,
 
 				...configs,
 			});
 
+			BB.Filters.register({
+				event: 'bluebase.reset',
+				key: 'apollo-cache-reset',
+				priority: 20,
+				value: async () => {
+					await persistor.purge();
+				},
+			});
 			return cache;
 		},
 	},
