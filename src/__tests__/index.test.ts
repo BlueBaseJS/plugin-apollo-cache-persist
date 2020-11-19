@@ -13,6 +13,12 @@ import { createHttpLink } from 'apollo-link-http';
 jest.mock('apollo-cache-persist', () => {
 	return { persistCache: jest.fn() };
 });
+jest.mock('@react-native-async-storage/async-storage', () => ({
+	getItem: jest.fn(),
+	removeItem: jest.fn(),
+	setItem: jest.fn(),
+}));
+
 
 // const client = { onClearStore: async () => jest.fn() };
 jest.mock('apollo-cache-persist', () => ({ CachePersistor: jest.fn() }));
