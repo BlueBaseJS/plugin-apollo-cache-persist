@@ -19,7 +19,6 @@ jest.mock('@react-native-async-storage/async-storage', () => ({
 	setItem: jest.fn(),
 }));
 
-
 // const client = { onClearStore: async () => jest.fn() };
 jest.mock('apollo-cache-persist', () => ({ CachePersistor: jest.fn() }));
 const httpLink = createHttpLink();
