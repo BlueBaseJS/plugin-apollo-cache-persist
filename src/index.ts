@@ -1,6 +1,7 @@
 import { BlueBase, createPlugin } from '@bluebase/core';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+
 import { ApolloClient } from 'apollo-client';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { CachePersistor } from 'apollo-cache-persist';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 
