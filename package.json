@@ -80,7 +80,7 @@
     "@react-native-async-storage/async-storage": "^1.13.2",
     "apollo-cache-persist": "^0.1.1",
     "deepmerge": "^4.0.0",
-    "react-native": "^0.59.8",
+    "react-native": "^0.64.0",
     "tslib": "^1.9.3"
   },
   "devDependencies": {
